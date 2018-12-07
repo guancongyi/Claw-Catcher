@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BIQ-HV-U2x">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Claw Catcher-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Clawer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qr-code" translatesAutoresizingMaskIntoConstraints="NO" id="IQk-Rh-3HC">
+                                <rect key="frame" x="135" y="188" width="105" height="105"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="105" id="DN3-LT-OaR"/>
+                                    <constraint firstAttribute="height" constant="105" id="Ft5-Vo-Kjf"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="MI2-pu-g73">
+                                <rect key="frame" x="72.666666666666686" y="333" width="230" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="Jup-ss-F6w"/>
+                                    <constraint firstAttribute="height" constant="50" id="y3c-MM-ch7"/>
+                                </constraints>
+                                <string key="text">Welocme to
+Internet-Based Claw Catcher</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Scan QR Code on Claw Catcher" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jSj-pt-5vl">
+                                <rect key="frame" x="72.666666666666686" y="391" width="230" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="oAM-E3-diP"/>
+                                    <constraint firstAttribute="width" constant="230" id="yuK-md-CEP"/>
+                                </constraints>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xah-uG-5YS">
+                                <rect key="frame" x="130" y="638" width="115" height="40"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="115" id="LvX-Yy-0jg"/>
+                                    <constraint firstAttribute="height" constant="40" id="zJ6-ah-tEg"/>
+                                </constraints>
+                                <state key="normal" title="Scan">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="6Sa-yA-g4c" kind="show" identifier="QR Code" id="7EH-wC-nyg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="MI2-pu-g73" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6jC-Dd-TXD"/>
+                            <constraint firstItem="Xah-uG-5YS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J9N-ZS-GTc"/>
+                            <constraint firstItem="jSj-pt-5vl" firstAttribute="top" secondItem="MI2-pu-g73" secondAttribute="bottom" constant="8" id="Li8-eg-Mzv"/>
+                            <constraint firstItem="MI2-pu-g73" firstAttribute="top" secondItem="IQk-Rh-3HC" secondAttribute="bottom" constant="40" id="Tvw-nT-2Sy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Xah-uG-5YS" secondAttribute="bottom" constant="100" id="Xix-WU-vXg"/>
+                            <constraint firstItem="IQk-Rh-3HC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="kzu-bS-fyg"/>
+                            <constraint firstItem="jSj-pt-5vl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tSP-e9-jh1"/>
+                            <constraint firstItem="IQk-Rh-3HC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="x9o-oX-xrc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Claw Catcher" id="r8G-Xm-a9O"/>
+                    <connections>
+                        <outlet property="scanButton" destination="Xah-uG-5YS" id="BUC-ep-ySR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1109.5999999999999" y="-564.46776611694156"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Q6P-SN-XiL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BIQ-HV-U2x" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="xxZ-mh-3xY">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hbL-dY-nRK">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="q3j-gz-ARw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="So6-DX-8Rz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="-564.46776611694156"/>
+        </scene>
+        <!--QR Code-->
+        <scene sceneID="TWC-Px-9VU">
+            <objects>
+                <viewController storyboardIdentifier="QRCodeReader" id="6Sa-yA-g4c" customClass="QRReaderViewController" customModule="Clawer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V0X-CT-m4p">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Boi-hc-1gV"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="QR Code" id="Gwj-ek-jt6"/>
+                    <connections>
+                        <segue destination="jkN-ph-DBF" kind="show" identifier="Quick Response" id="t4L-QA-n85"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JDH-ah-5U0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2103" y="-564"/>
+        </scene>
+        <!--Game-->
+        <scene sceneID="A5N-Bx-Hrr">
+            <objects>
+                <viewController id="Pds-hu-QgM" customClass="GameViewController" customModule="Clawer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yt1-xa-jHk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gis-hA-KNK">
+                                <rect key="frame" x="50" y="315" width="275" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="xQi-Qc-H9K"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Ready to Catch">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="18" name="Zapfino"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eWJ-eQ-sO0" firstAttribute="trailing" secondItem="Gis-hA-KNK" secondAttribute="trailing" constant="50" id="BaL-8F-0le"/>
+                            <constraint firstItem="Gis-hA-KNK" firstAttribute="leading" secondItem="eWJ-eQ-sO0" secondAttribute="leading" constant="50" id="bLI-3P-DeX"/>
+                            <constraint firstItem="Gis-hA-KNK" firstAttribute="top" secondItem="eWJ-eQ-sO0" secondAttribute="top" constant="227" id="ye3-b6-Vdy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eWJ-eQ-sO0"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Game" id="hck-eh-dNV">
+                        <barButtonItem key="rightBarButtonItem" title="Play Again" id="6se-Sa-X1V"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="gameStatusTextView" destination="Gis-hA-KNK" id="ofI-eX-NE6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tWg-sj-o1F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4071.1999999999998" y="-564.53201970443354"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="Jcp-IO-PIm">
+            <objects>
+                <viewController id="jkN-ph-DBF" customClass="WebViewController" customModule="Clawer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3J7-JB-coN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter URL" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="DoU-CZ-0Qr">
+                                <rect key="frame" x="100" y="96" width="259" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4Sd-1b-KMg"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="URL" returnKeyType="go" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="keyboardDone:" destination="jkN-ph-DBF" eventType="editingDidEndOnExit" id="jCP-1J-RYV"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gUB-cF-TuO">
+                                <rect key="frame" x="60" y="99" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="bIE-1n-nO2"/>
+                                    <constraint firstAttribute="width" constant="24" id="tdC-MQ-a1T"/>
+                                </constraints>
+                                <state key="normal" image="ForwardGrayArrow"/>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="jkN-ph-DBF" eventType="touchUpInside" id="KjE-0P-Vsi"/>
+                                    <action selector="forwardButtonTapped:" destination="jkN-ph-DBF" eventType="touchUpInside" id="LXs-hb-irT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WOE-dZ-BWA">
+                                <rect key="frame" x="16" y="99" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="Csk-Zm-7Xx"/>
+                                    <constraint firstAttribute="height" constant="24" id="pAt-t3-2Ra"/>
+                                </constraints>
+                                <state key="normal" image="BackGrayArrow"/>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="jkN-ph-DBF" eventType="touchUpInside" id="TPm-Dj-hc5"/>
+                                </connections>
+                            </button>
+                            <wkWebView contentMode="scaleAspectFit" allowsBackForwardNavigationGestures="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cCE-aZ-gBv">
+                                <rect key="frame" x="0.0" y="134" width="375" height="678"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="self.imageView.contentMode">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WOE-dZ-BWA" firstAttribute="top" secondItem="bUu-1h-rjf" secondAttribute="top" constant="11" id="2jo-5h-1yt"/>
+                            <constraint firstItem="gUB-cF-TuO" firstAttribute="top" secondItem="bUu-1h-rjf" secondAttribute="top" constant="11" id="G73-Hn-fIZ"/>
+                            <constraint firstItem="DoU-CZ-0Qr" firstAttribute="top" secondItem="bUu-1h-rjf" secondAttribute="top" constant="8" id="HxM-fr-vN8"/>
+                            <constraint firstItem="WOE-dZ-BWA" firstAttribute="leading" secondItem="bUu-1h-rjf" secondAttribute="leading" constant="16" id="SMX-NA-87P"/>
+                            <constraint firstAttribute="bottom" secondItem="cCE-aZ-gBv" secondAttribute="bottom" id="UaM-fV-gYf"/>
+                            <constraint firstItem="cCE-aZ-gBv" firstAttribute="trailing" secondItem="bUu-1h-rjf" secondAttribute="trailing" id="XpP-ib-Lo3"/>
+                            <constraint firstItem="gUB-cF-TuO" firstAttribute="leading" secondItem="WOE-dZ-BWA" secondAttribute="trailing" constant="20" id="fos-Ch-F4C"/>
+                            <constraint firstItem="cCE-aZ-gBv" firstAttribute="leading" secondItem="bUu-1h-rjf" secondAttribute="leading" id="h9j-um-cys"/>
+                            <constraint firstItem="cCE-aZ-gBv" firstAttribute="top" secondItem="DoU-CZ-0Qr" secondAttribute="bottom" constant="8" id="jge-ZN-yKd"/>
+                            <constraint firstItem="bUu-1h-rjf" firstAttribute="trailing" secondItem="DoU-CZ-0Qr" secondAttribute="trailing" constant="16" id="rbJ-AG-609"/>
+                            <constraint firstItem="DoU-CZ-0Qr" firstAttribute="leading" secondItem="gUB-cF-TuO" secondAttribute="trailing" constant="16" id="znE-Xm-FAL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bUu-1h-rjf"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bSq-2E-naV">
+                        <barButtonItem key="rightBarButtonItem" image="claw-machine" id="D77-2Q-SDx">
+                            <inset key="imageInsets" minX="73" minY="0.0" maxX="-80" maxY="-5"/>
+                            <inset key="largeContentSizeImageInsets" minX="0.0" minY="-1" maxX="0.0" maxY="0.0"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="self.imageView.contentMode">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <segue destination="Pds-hu-QgM" kind="show" id="dHi-8e-I2V"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="backButton" destination="WOE-dZ-BWA" id="MOH-ua-drN"/>
+                        <outlet property="forwardButton" destination="gUB-cF-TuO" id="5Tb-Fi-iNH"/>
+                        <outlet property="urlTextField" destination="DoU-CZ-0Qr" id="XBZ-ct-gva"/>
+                        <outlet property="webView" destination="cCE-aZ-gBv" id="8Db-Pz-vWM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U9q-Zf-JfO" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3161" y="-564"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BackGrayArrow" width="85" height="85"/>
+        <image name="ForwardGrayArrow" width="85" height="85"/>
+        <image name="claw-machine" width="204.80000305175781" height="204.80000305175781"/>
+        <image name="qr-code" width="384" height="384"/>
+    </resources>
+</document>
