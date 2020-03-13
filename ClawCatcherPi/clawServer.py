@@ -55,55 +55,7 @@ def caught():
 	return distance() > 2000
 
 
-def start():
-	'''
-	def wait_for_event(e):
-		print('music start')
-		os.system("omxplayer clawcatcher.mp3")
-
-		event_is_set = e.wait()
-		print(event_is_set)
-		if event_is_set:
-			print('music over')
-		
-		
-	def wait_for_event_timeout(e,t):
-		print('wait_for_claw starting')
-		count = 0
-		while not caught():
-			print('inloop')
-			now = time.time()
-			GPIO.output(23, GPIO.LOW)
-			elapsed= time.time() - now
-			print(count)
-			time.sleep(1.-elapsed)
-			if count == 30:
-				GPIO.output(23, GPIO.HIGH)
-				
-				return 'timeout'
-			count+=1
-		GPIO.output(23, GPIO.HIGH)
-		gotIt = 1
-		e.set()
-		e.wait(t)
-		e.set()
-		print(gotIt)
-		return 'caught'
-		
-	e = threading.Event()
-	gotIt = 0
-	thread1 = threading.Thread(name='non-block',target=wait_for_event,args=(e,))
-	thread1.start()
-	
-	thread2 = threading.Thread(name='block',target=wait_for_event_timeout,args=(e,1))
-	thread2.start()
-	
-	if gotIt == 1:
-		print('check')
-		e.set()
-	'''
-		
-				
+def start():			
 	def t1():
 		# play music
 		os.system("omxplayer clawcatcher.mp3")
@@ -117,8 +69,7 @@ def start():
 			elapsed= time.time() - now
 			print(count)
 			time.sleep(1.-elapsed)
-			if count == 25:
-				
+			if count == 25:			
 				print(gotIt)
 				GPIO.output(23, GPIO.HIGH)
 				return ''

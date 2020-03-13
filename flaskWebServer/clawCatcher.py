@@ -13,7 +13,6 @@ def home():
         global result
         mq = messageQ.MQ(serverIP)
         response = mq.call('start')
-        # convert response to string
         result = response.decode('utf-8')
 
     def t1():
@@ -38,12 +37,9 @@ def register():
     error = None
     if request.method == 'POST':
         if request.form['button1'] == 'Register':
-
-            # check if the passwords are the same
             if request.form['password'] != request.form['confirm_password']:
                 error = 'Password is not consistent'
             else:
-                # check if the user exists
                 if db.is_exist(request.form['username'], request.form['password']):
                     error = 'Already exists'
                 else:
