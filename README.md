@@ -4,7 +4,7 @@
 # Demo 
 https://youtu.be/82ttiICEKp4
 
-![My Gif](demo(2).gif)
+![My Gif](demo.gif)
 
 # Introduction
 This projec consists of three components:
