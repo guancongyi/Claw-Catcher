@@ -3,7 +3,8 @@
 
 # Demo 
 https://youtu.be/82ttiICEKp4
-![](name-of-giphy.gif)
+
+![My Gif](/demo.gif)
 
 # Introduction
 This projec consists of three components:
