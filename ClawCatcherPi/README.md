@@ -1,2 +1,0 @@
-# ClawCatcher
-clawcatcher server
