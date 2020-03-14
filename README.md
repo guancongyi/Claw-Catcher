@@ -2,7 +2,7 @@
 **An internet-based claw catcher**
 
 # Demo 
-https://youtu.be/82ttiICEKp4
+Please see this short youtube video for full demo:smiley:: https://youtu.be/82ttiICEKp4
 
 ![My Gif](demo.gif)
 
