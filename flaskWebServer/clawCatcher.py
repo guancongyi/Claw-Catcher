@@ -59,7 +59,6 @@ def login():
                 return redirect('/')
             else:
                 error = 'Invalid Username or password'
-
         elif request.form['button1'] == 'Register':
             return redirect('/register')
 
@@ -67,7 +66,6 @@ def login():
 
 @app.route('/status', methods=['GET','POST'])
 def status():
-
     return result
 
 if __name__ == "__main__":
