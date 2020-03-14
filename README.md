@@ -4,7 +4,7 @@
 # Demo 
 Please see this short youtube video for full demo:smiley:: https://youtu.be/82ttiICEKp4
 
-![My Gif](demo.gif)
+![My Gif](https://kapwi.ng/c/gcvuXn71)
 
 # Introduction
 This projec consists of three components:
