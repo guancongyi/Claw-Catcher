@@ -4,7 +4,7 @@
 # Demo 
 Please see this short youtube video for full demo:smiley:: https://youtu.be/82ttiICEKp4
 
-![](https://media.giphy.com/media/SA0inaarjdT7qaCiDO/giphy.gif)
+![Alt Text](https://media.giphy.com/media/jU1sHi98SYNeiQQc6M/giphy.gif)
 
 # Introduction
 This projec consists of three components:
